@@ -21,6 +21,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('首页'),
+        leading: Icon(Icons.menu),
       ),
       body: HelloApp(),
     );

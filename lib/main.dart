@@ -9,7 +9,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "flutter_home",
-      home: HelloApp(),
+      home: Home(),
+    );
+  }
+}
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('首页'),
+      ),
+      body: HelloApp(),
     );
   }
 }

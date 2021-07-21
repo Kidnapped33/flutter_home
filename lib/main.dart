@@ -5,14 +5,22 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "flutter_home",
+      home: HelloApp(),
+    );
+  }
+}
 
+class HelloApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Center(
         child: Text(
-          'hello MyApp',
+          'hello flutter_home',
           textDirection: TextDirection.ltr,
         ),
       ),

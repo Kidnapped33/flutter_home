@@ -23,6 +23,7 @@ class Home extends StatelessWidget {
         title: Text('首页'),
         leading: Icon(Icons.menu),
         actions: [Icon(Icons.settings)],
+        centerTitle: true,
       ),
       body: HelloApp(),
     );

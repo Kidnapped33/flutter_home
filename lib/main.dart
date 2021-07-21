@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "flutter_home",
       home: Home(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
